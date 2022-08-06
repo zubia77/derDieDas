@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cabin+Sketch&family=Chelsea+Market&family=Henny+Penny&display=swap");
+.page_derdiedas {
+  height: 600px;
+  background-color: #87c0cd;
+  font-family: Cabin Sketch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.page_derdiedas .title {
+  position: absolute;
+  top: 1rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #113f67;
+}
+
+.page_derdiedas .artikelBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  top: 6rem;
+  gap: 6rem;
+}
+
+.page_derdiedas .button {
+  width: 5em;
+  height: 3em;
+  background-color: #226597;
+  font-family: 'Chelsea Market';
+  color: #f3f9fb;
+  border: 3px solid #f3f9fb;
+  font-size: 2rem;
+  margin-top: 3rem;
+  border-radius: 2% 6% 5% 4%/1% 1% 2% 4%;
+  position: relative;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page_derdiedas .button::before {
+  content: '';
+  border: 2px solid #113f67;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4%/2% 6% 5% 4%;
+}
+
+.page_derdiedas .der:hover {
+  -webkit-transform: rotateY(20deg) skewY(-15deg);
+          transform: rotateY(20deg) skewY(-15deg);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.page_derdiedas .die:hover {
+  -webkit-transform: rotateY(40deg) skewY(-5deg);
+          transform: rotateY(40deg) skewY(-5deg);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.page_derdiedas .das:hover {
+  -webkit-transform: rotateY(20deg) skewY(15deg);
+          transform: rotateY(20deg) skewY(15deg);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.page_derdiedas .wordJson {
+  font-size: 4rem;
+  color: #113f67;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 18rem;
+  border-bottom: #226597 5px solid;
+  border-radius: 255px 15px 225px 15px/15px;
+}
+
+.page_derdiedas .message {
+  width: 50%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 3rem;
+  margin-top: 1rem;
+  border: #226597 3px solid;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 10px;
+  background: #113f67;
+  text-align: center;
+  color: #87c0cd;
+  font-family: Cabin Sketch;
+  font-size: 3rem;
+}
+
+.page_derdiedas .message::before {
+  content: '';
+  border: 2px solid #f3f9fb;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4%/2% 6% 5% 4%;
+}
+
+.page_derdiedas .nextBtn {
+  height: 80px;
+  background-color: #226597;
+  font-family: 'Chelsea Market';
+  color: #f3f9fb;
+  padding: 1rem 2rem;
+  border: 3px solid #f3f9fb;
+  font-size: 1rem;
+  border-radius: 2% 6% 5% 4%/1% 1% 2% 4%;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.page_derdiedas .nextBtn::before {
+  content: '';
+  border: 2px solid #113f67;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4%/2% 6% 5% 4%;
+}
+
+.page_derdiedas .testedWords {
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #113f67;
+}
+
+.page_derdiedas .image {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+/*# sourceMappingURL=derDieDas.css.map */
