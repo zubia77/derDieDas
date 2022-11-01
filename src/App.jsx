@@ -1,7 +1,8 @@
 import "./App.scss";
 import { useState, useEffect } from "react";
 import _words from "../data/derDieDas.json";
-import * as qmat from "../qtools/qmat.mjs";
+import GetRandomNumber from "../components/GetRandomNumber"
+import AddAWord from "../components/AddAWord"
 
 function App() {
     const [currentMessage, setCurrentMessage] = useState("");
@@ -12,7 +13,7 @@ function App() {
     const [wordIsCorrect, setWordIsCorrect] = useState(false);
 
     const defineCurrentWord = () => {
-        const index = qmat.getRand(0, untestedWords.length - 1);
+        const index = GetRandomNumber(0, untestedWords.length - 1);
         setCurrentWord({ ...untestedWords[index] });
     };
 
@@ -53,14 +54,15 @@ function App() {
         setWordIsCorrect(false);
         prepareNextWord();
     };
-    // const image = require("../derDieOderDas/images/edwardpc.png");
+   
 
     return (
         <div className="App">
             <h1 className="title">Der, Die oder Das</h1>
-            {/* <div>
-                <img className="image" src={image} />
-            </div> */}
+            <div>
+                <img className="image" src="../images/edwardpc.png" />
+            </div>
+            {/* <AddAWord /> */}
             {untestedWords.length > 0 && (
                 <>
                     <div className="artikelBtn">
