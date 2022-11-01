@@ -1,4 +1,5 @@
-[
+{
+	"flashcards": [
 	{
 		"artikel": "die",
 		"singular": "Notiz",
@@ -450,3 +451,4 @@
 		"plural": "die Links"
 	}
 ]
+}
