@@ -3,9 +3,8 @@ import { useState, useEffect } from "react";
 import _words from "../data/derDieDas.json";
 import GetRandomNumber from "../components/GetRandomNumber"
 import AddAWord from "../components/AddAWord"
-import axios from "axios";
 
-const backend_base_url = 'http://localhost:5000';
+
 
 function App() {
     const [currentMessage, setCurrentMessage] = useState("");
@@ -15,13 +14,7 @@ function App() {
     const [choiceNumber, setChoiceNumber] = useState(1);
     const [wordIsCorrect, setWordIsCorrect] = useState(false);
 
-    const getWords = () => {
-		(async () => {
-			setUntestedWords(
-				(await axios.get(backend_base_url + '/flashcards')).data
-			);
-		})();
-	};
+
 
     const defineCurrentWord = () => {
         const index = GetRandomNumber(0, untestedWords.length - 1);
@@ -35,7 +28,7 @@ function App() {
 
     useEffect(() => {
         prepareNextWord();
-        getWords();
+   
     }, []);
 
     const handleChoice = (article) => {
