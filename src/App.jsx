@@ -65,7 +65,7 @@ function App() {
         <div className="App">
             <h1 className="title">Der, Die oder Das</h1>
             <div>
-                <img className="image" src="../images/edwardpc.png" />
+                <img className="image" src="/images/edwardpc.png" />
             </div>
             {/* <AddAWord /> */}
             {untestedWords.length > 0 && (
