@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "api": "json-server --watch .//data/derDieDas.json --port 5000",
     "start": "vite preview --host --port 3500",
-    "deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart der-die-das"
+    "deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart derDieDas"
   },
   "dependencies": {
     "react": "^18.0.0",
